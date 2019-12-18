@@ -2,7 +2,7 @@
   <ion-list-header>
     Subjects
   </ion-list-header>
-  <ion-item *ngFor="let subject of subjectsList">
+  <ion-item *ngFor="let subject of subjectsList" (click)="goToPageInfo(subject.name)">
     <ion-label>
       <h2>{{subject.name}}</h2>
     </ion-label>
