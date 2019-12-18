@@ -3,16 +3,17 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>{{subject.name}}</ion-title>
+    <ion-title>{{student.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let student of subject.students">
+    <ion-item >
       <ion-label>
-      <h2>{{student.name}}</h2>
-      <h2>{{student.address}}</h2>
+        <h2>{{student.name}}</h2>
+        <h2>{{student.address}}</h2>
       </ion-label>
     </ion-item>
   </ion-list>
