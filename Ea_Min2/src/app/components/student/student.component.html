@@ -1,0 +1,26 @@
+<ion-list>
+  <ion-list-header>
+    Telematics Students
+  </ion-list-header>
+  <ion-item *ngFor="let student of telematicStudents">
+    <ion-label>
+      <h2>{{student.name}}</h2>
+    </ion-label>
+  </ion-item>
+  <ion-list-header>
+    System Students
+  </ion-list-header>
+  <ion-item *ngFor="let student of systemStudents">
+    <ion-label>
+      <h2>{{student.name}}</h2>
+    </ion-label>
+  </ion-item>
+  <ion-list-header>
+    Aeros Students
+  </ion-list-header>
+  <ion-item *ngFor="let student of aeroStudents">
+    <ion-label>
+      <h2>{{student.name}}</h2>
+    </ion-label>
+  </ion-item>
+</ion-list>
