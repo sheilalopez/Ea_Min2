@@ -16,6 +16,7 @@ export class StudentInfoPage implements OnInit {
   constructor(private studentService: StudentService, private route: ActivatedRoute) {
 
     this.studentName = this.route.snapshot.paramMap.get('name')
+
   }
 
   async ngOnInit() {

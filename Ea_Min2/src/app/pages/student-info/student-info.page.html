@@ -12,8 +12,14 @@
   <ion-list>
     <ion-item >
       <ion-label>
-        <h2>{{student.name}}</h2>
-        <h2>{{student.address}}</h2>
+        <h2>Name: {{student.name}}</h2>
+        <h2>Adress: {{student.address}}</h2>
+        <h2 *ngFor="let phone of student.phones">
+          <ion-item>
+            <h2>{{phone.description}}</h2>
+            <h2>{{phone.number}}</h2>
+          </ion-item>
+        </h2>
       </ion-label>
     </ion-item>
   </ion-list>
